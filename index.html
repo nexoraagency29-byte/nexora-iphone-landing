@@ -1,0 +1,4135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexora iPhone | El vendedor con IA para tu local de iPhones — WhatsApp 24/7 + CRM</title>
+    <meta name="description"
+        content="El vendedor de iPhones con IA que atiende tu WhatsApp e Instagram 24/7, no pierde un cliente y te arma el CRM solo. Precios atados al dólar y pre-entrenado para el rubro iPhone.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nexora iPhone | El vendedor con IA para tu local de iPhones">
+    <meta property="og:description"
+        content="Atiende WhatsApp e Instagram 24/7, califica leads, pasa precios reales y te arma el CRM solo. Probá el bot por WhatsApp.">
+    <meta property="og:url" content="https://nexoraia.net">
+    <meta name="theme-color" content="#00D47E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23060E0A'/%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2300D47E'/%3E%3Cstop offset='100%25' stop-color='%2300A3FF'/%3E%3C/linearGradient%3E%3ClinearGradient id='g2' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2333FFAA'/%3E%3Cstop offset='100%25' stop-color='%2300D47E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='18' y='18' width='16' height='64' rx='6' fill='url(%23g1)'/%3E%3Crect x='66' y='18' width='16' height='64' rx='6' fill='url(%23g1)'/%3E%3Cpath d='M26 26 L74 74' stroke='url(%23g2)' stroke-width='16' stroke-linecap='round'/%3E%3C/svg%3E">
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <style>
+        /* ================================================================
+           NEXORA IA — PREMIUM LANDING PAGE
+           Glassmorphism + Code aesthetics + Green palette
+           ================================================================ */
+
+        :root {
+            --primary: #00D47E;
+            --primary-dark: #00B368;
+            --primary-light: #33FFAA;
+            --primary-rgb: 0, 212, 126;
+            --accent: #00A3FF;
+            --accent-rgb: 0, 163, 255;
+            --warning: #FFB800;
+            --danger: #FF4757;
+            --dark-0: #030706;
+            --dark-1: #060E0A;
+            --dark-2: #0A1610;
+            --dark-3: #0F1F18;
+            --dark-4: #142820;
+            --dark-surface: rgba(10, 22, 16, 0.6);
+            --glass: rgba(0, 212, 126, 0.03);
+            --glass-border: rgba(0, 212, 126, 0.08);
+            --glass-strong: rgba(0, 212, 126, 0.06);
+            --text-0: #F0FFF7;
+            --text-1: #C8E6D5;
+            --text-2: #7A9E8A;
+            --text-3: #4A6B57;
+            --font-display: 'Outfit', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+            --radius: 20px;
+            --radius-sm: 12px;
+            --radius-xs: 8px;
+            --transition: cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* === RESET === */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+        }
+
+        body {
+            font-family: var(--font-display);
+            background: var(--dark-0);
+            color: var(--text-0);
+            line-height: 1.7;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button {
+            font-family: inherit;
+            cursor: pointer;
+        }
+
+        /* === GLOBAL NOISE TEXTURE === */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        /* === ANIMATIONS === */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.9s var(--transition), transform 0.9s var(--transition);
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-delay-1 {
+            transition-delay: 0.1s;
+        }
+
+        .reveal-delay-2 {
+            transition-delay: 0.2s;
+        }
+
+        .reveal-delay-3 {
+            transition-delay: 0.3s;
+        }
+
+        .reveal-delay-4 {
+            transition-delay: 0.4s;
+        }
+
+        @keyframes float-slow {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-15px) rotate(1deg);
+            }
+        }
+
+        @keyframes float-medium {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-10px) rotate(-1deg);
+            }
+        }
+
+        @keyframes pulse-green {
+
+            0%,
+            100% {
+                box-shadow: 0 0 20px rgba(var(--primary-rgb), 0.2);
+            }
+
+            50% {
+                box-shadow: 0 0 50px rgba(var(--primary-rgb), 0.4);
+            }
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes gradient-flow {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        @keyframes scan-line {
+            0% {
+                top: -4px;
+            }
+
+            100% {
+                top: 100%;
+            }
+        }
+
+        @keyframes typing-cursor {
+
+            0%,
+            100% {
+                border-right-color: var(--primary);
+            }
+
+            50% {
+                border-right-color: transparent;
+            }
+        }
+
+        @keyframes msg-in-left {
+            from {
+                opacity: 0;
+                transform: translateX(-20px) scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0) scale(1);
+            }
+        }
+
+        @keyframes msg-in-right {
+            from {
+                opacity: 0;
+                transform: translateX(20px) scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0) scale(1);
+            }
+        }
+
+        @keyframes glow-pulse {
+
+            0%,
+            100% {
+                opacity: 0.5;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes orbit {
+            0% {
+                transform: rotate(0deg) translateX(200px) rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg) translateX(200px) rotate(-360deg);
+            }
+        }
+
+        /* === GLASS COMPONENTS === */
+        .glass-card {
+            background: var(--glass);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glass-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(var(--primary-rgb), 0.3), transparent);
+        }
+
+        /* === NAVBAR === */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(3, 7, 6, 0.7);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border-bottom: 1px solid var(--glass-border);
+            transition: all 0.4s ease;
+        }
+
+        .navbar.scrolled {
+            background: rgba(3, 7, 6, 0.92);
+        }
+
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 0;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-brand-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-mono);
+            font-weight: 700;
+            font-size: 0.85rem;
+            color: var(--dark-0);
+            box-shadow: 0 0 20px rgba(var(--primary-rgb), 0.3);
+        }
+
+        .nav-brand-text {
+            font-family: var(--font-mono);
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: -0.5px;
+            color: var(--text-0);
+        }
+
+        .nav-brand-text span {
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links a {
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: var(--text-2);
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: all 0.3s;
+            letter-spacing: 0.2px;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-0);
+            background: rgba(var(--primary-rgb), 0.05);
+        }
+
+        .nav-cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--primary);
+            color: var(--dark-0) !important;
+            padding: 10px 22px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 0.82rem;
+            border: none;
+            transition: all 0.3s;
+            box-shadow: 0 4px 20px rgba(var(--primary-rgb), 0.3);
+            letter-spacing: 0.3px;
+        }
+
+        .nav-cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(var(--primary-rgb), 0.45);
+        }
+
+        .nav-mobile-btn {
+            display: none;
+            background: none;
+            border: 1px solid var(--glass-border);
+            color: var(--text-0);
+            font-size: 1.3rem;
+            padding: 8px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        /* === HERO === */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 140px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Orbs */
+        .hero-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            pointer-events: none;
+        }
+
+        .hero-orb-1 {
+            width: 500px;
+            height: 500px;
+            background: rgba(var(--primary-rgb), 0.08);
+            top: -100px;
+            right: -100px;
+            animation: float-slow 12s ease-in-out infinite;
+        }
+
+        .hero-orb-2 {
+            width: 350px;
+            height: 350px;
+            background: rgba(var(--accent-rgb), 0.05);
+            bottom: -50px;
+            left: -50px;
+            animation: float-medium 10s ease-in-out infinite;
+        }
+
+        .hero-orb-3 {
+            width: 200px;
+            height: 200px;
+            background: rgba(var(--primary-rgb), 0.12);
+            top: 40%;
+            left: 30%;
+            animation: float-slow 15s ease-in-out infinite reverse;
+        }
+
+        /* Grid overlay */
+        .hero-grid-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image:
+                linear-gradient(rgba(var(--primary-rgb), 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(var(--primary-rgb), 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black 30%, transparent 70%);
+            -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black 30%, transparent 70%);
+        }
+
+        .hero-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content {}
+
+        .hero-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--primary);
+            background: rgba(var(--primary-rgb), 0.06);
+            border: 1px solid rgba(var(--primary-rgb), 0.15);
+            padding: 8px 18px;
+            border-radius: 50px;
+            margin-bottom: 28px;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-tag .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--primary);
+            border-radius: 50%;
+            animation: glow-pulse 2s ease infinite;
+            box-shadow: 0 0 8px rgba(var(--primary-rgb), 0.6);
+        }
+
+        .hero h1 {
+            font-size: clamp(2.6rem, 5.5vw, 4rem);
+            font-weight: 900;
+            line-height: 1.05;
+            letter-spacing: -0.03em;
+            margin-bottom: 24px;
+        }
+
+        .hero h1 .gradient-text {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light), var(--accent));
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradient-flow 6s ease infinite;
+        }
+
+        .hero-desc {
+            font-size: 1.1rem;
+            color: var(--text-2);
+            line-height: 1.8;
+            margin-bottom: 40px;
+            max-width: 500px;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 56px;
+            flex-wrap: wrap;
+        }
+
+        .btn-glow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--primary);
+            color: var(--dark-0);
+            padding: 16px 34px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            border: none;
+            transition: all 0.4s var(--transition);
+            box-shadow: 0 4px 30px rgba(var(--primary-rgb), 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+            letter-spacing: 0.3px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-glow::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 60%);
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+
+        .btn-glow:hover::after {
+            opacity: 1;
+        }
+
+        .btn-glow:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 48px rgba(var(--primary-rgb), 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-ghost {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: transparent;
+            color: var(--text-1);
+            padding: 16px 34px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border: 1px solid var(--glass-border);
+            transition: all 0.3s;
+        }
+
+        .btn-ghost:hover {
+            border-color: rgba(var(--primary-rgb), 0.3);
+            color: var(--primary);
+            background: rgba(var(--primary-rgb), 0.04);
+            transform: translateY(-2px);
+        }
+
+        /* Hero stats */
+        .hero-metrics {
+            display: flex;
+            gap: 48px;
+        }
+
+        .hero-metric {
+            position: relative;
+            padding-left: 16px;
+        }
+
+        .hero-metric::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 4px;
+            bottom: 4px;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--primary), transparent);
+            border-radius: 2px;
+        }
+
+        .hero-metric .val {
+            font-family: var(--font-mono);
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--text-0);
+            line-height: 1.2;
+        }
+
+        .hero-metric .lbl {
+            font-size: 0.75rem;
+            color: var(--text-3);
+            font-weight: 500;
+            letter-spacing: 0.3px;
+        }
+
+        /* Hero visual - floating cards */
+        .hero-visual {
+            position: relative;
+            height: 520px;
+        }
+
+        /* Code snippet card */
+        .code-card {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 320px;
+            background: rgba(6, 14, 10, 0.8);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            animation: float-slow 8s ease-in-out infinite;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+            z-index: 3;
+        }
+
+        .code-card-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .code-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .code-dot.r {
+            background: #FF5F57;
+        }
+
+        .code-dot.y {
+            background: #FEBC2E;
+        }
+
+        .code-dot.g {
+            background: #28C840;
+        }
+
+        .code-card-file {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            color: var(--text-3);
+            margin-left: auto;
+        }
+
+        .code-card-body {
+            padding: 16px;
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            line-height: 1.9;
+            color: var(--text-2);
+        }
+
+        .code-card-body .kw {
+            color: #C792EA;
+        }
+
+        .code-card-body .fn {
+            color: #82AAFF;
+        }
+
+        .code-card-body .str {
+            color: var(--primary);
+        }
+
+        .code-card-body .cm {
+            color: var(--text-3);
+            font-style: italic;
+        }
+
+        .code-card-body .num {
+            color: #F78C6C;
+        }
+
+        .code-card-body .op {
+            color: #89DDFF;
+        }
+
+        /* Chat mockup card */
+        .chat-card {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 300px;
+            background: rgba(6, 14, 10, 0.85);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            animation: float-medium 9s ease-in-out infinite;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+            z-index: 4;
+        }
+
+        .chat-card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .chat-avatar-sm {
+            width: 34px;
+            height: 34px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 0.7rem;
+            color: var(--dark-0);
+        }
+
+        .chat-meta .chat-name-sm {
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+
+        .chat-meta .chat-status-sm {
+            font-size: 0.7rem;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .chat-meta .chat-status-sm::before {
+            content: '';
+            width: 5px;
+            height: 5px;
+            background: var(--primary);
+            border-radius: 50%;
+            box-shadow: 0 0 6px var(--primary);
+        }
+
+        .chat-msgs {
+            padding: 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .chat-msg {
+            max-width: 82%;
+            padding: 10px 14px;
+            border-radius: 12px;
+            font-size: 0.78rem;
+            line-height: 1.5;
+            opacity: 0;
+        }
+
+        .chat-msg.in-view {
+            opacity: 1;
+        }
+
+        .chat-msg-user {
+            align-self: flex-end;
+            background: var(--primary);
+            color: var(--dark-0);
+            border-bottom-right-radius: 4px;
+            font-weight: 500;
+        }
+
+        .chat-msg-user.in-view {
+            animation: msg-in-right 0.5s var(--transition) forwards;
+        }
+
+        .chat-msg-bot {
+            align-self: flex-start;
+            background: var(--dark-3);
+            border: 1px solid var(--glass-border);
+            border-bottom-left-radius: 4px;
+            color: var(--text-1);
+        }
+
+        .chat-msg-bot.in-view {
+            animation: msg-in-left 0.5s var(--transition) forwards;
+        }
+
+        .chat-msg-alert {
+            align-self: center;
+            background: rgba(var(--primary-rgb), 0.08);
+            border: 1px solid rgba(var(--primary-rgb), 0.15);
+            color: var(--primary);
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 50px;
+        }
+
+        .chat-msg-alert.in-view {
+            animation: msg-in-left 0.5s var(--transition) forwards;
+        }
+
+        /* Matte glass texture card */
+        .matte-card {
+            position: absolute;
+            top: 50%;
+            right: -10px;
+            transform: translateY(-50%);
+            width: 180px;
+            padding: 20px;
+            background: rgba(var(--primary-rgb), 0.04);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(var(--primary-rgb), 0.1);
+            border-radius: 16px;
+            text-align: center;
+            animation: float-slow 11s ease-in-out infinite reverse;
+            z-index: 5;
+        }
+
+        .matte-card .matte-label {
+            font-family: var(--font-mono);
+            font-size: 0.6rem;
+            color: var(--text-3);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+
+        .matte-card .matte-value {
+            font-family: var(--font-mono);
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-shadow: 0 0 20px rgba(var(--primary-rgb), 0.3);
+        }
+
+        .matte-card .matte-sub {
+            font-size: 0.7rem;
+            color: var(--text-2);
+            margin-top: 4px;
+        }
+
+        /* === SECTIONS SHARED === */
+        .section {
+            padding: 140px 0;
+            position: relative;
+        }
+
+        .section-alt {
+            background: var(--dark-1);
+        }
+
+        .section-divider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(var(--primary-rgb), 0.2), transparent);
+        }
+
+        .section-header {
+            margin-bottom: 72px;
+        }
+
+        .section-header.center {
+            text-align: center;
+        }
+
+        .section-number {
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: var(--primary);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .section-number::before {
+            content: '';
+            width: 24px;
+            height: 1px;
+            background: var(--primary);
+        }
+
+        .section-header.center .section-number {
+            justify-content: center;
+        }
+
+        .section-header.center .section-number::before {
+            display: none;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -0.025em;
+            margin-bottom: 16px;
+        }
+
+        .section-desc {
+            font-size: 1.05rem;
+            color: var(--text-2);
+            line-height: 1.8;
+            max-width: 580px;
+        }
+
+        .section-header.center .section-desc {
+            margin: 0 auto;
+        }
+
+        /* === PAIN SECTION === */
+        .pain-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .pain-card {
+            background: rgba(6, 14, 10, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            padding: 36px 28px;
+            transition: all 0.5s var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pain-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--danger), var(--warning));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.5s var(--transition);
+        }
+
+        .pain-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .pain-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(255, 71, 87, 0.15);
+            box-shadow: 0 24px 64px rgba(0, 0, 0, 0.3);
+        }
+
+        .pain-card .pain-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background: rgba(255, 71, 87, 0.06);
+            border: 1px solid rgba(255, 71, 87, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+
+        .pain-card .pain-icon .material-icons-outlined {
+            font-size: 1.4rem;
+            color: var(--danger);
+        }
+
+        .pain-card h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            line-height: 1.35;
+        }
+
+        .pain-card p {
+            font-size: 0.9rem;
+            color: var(--text-2);
+            line-height: 1.7;
+        }
+
+        .pain-cost {
+            margin-top: 20px;
+            padding-top: 16px;
+            border-top: 1px solid var(--glass-border);
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            color: var(--warning);
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        /* MICRO PANELS */
+        .micro-panel {
+            background: rgba(6, 14, 10, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            padding: 32px 24px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 380px;
+        }
+
+        .micro-panel h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--primary);
+        }
+
+        .micro-panel p {
+            font-size: 0.85rem;
+            color: var(--text-2);
+            margin-bottom: auto;
+        }
+
+        /* Deck Feature */
+        .deck-container {
+            position: relative;
+            height: 180px;
+            margin-top: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            perspective: 800px;
+        }
+
+        .deck-card {
+            position: absolute;
+            width: 85%;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--primary);
+            transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+            bottom: 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Telemetry Feature */
+        .telemetry-box {
+            background: #000;
+            border-radius: 12px;
+            padding: 16px;
+            margin-top: 24px;
+            height: 160px;
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            display: flex;
+            flex-direction: column;
+            border: 1px inset rgba(255, 255, 255, 0.05);
+        }
+
+        .telemetry-header {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 0.7rem;
+        }
+
+        .telemetry-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--accent);
+            animation: blink 1s infinite;
+        }
+
+        .term-line {
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 4px;
+        }
+
+        .term-active {
+            color: var(--primary);
+        }
+
+        .term-cursor {
+            display: inline-block;
+            width: 6px;
+            height: 12px;
+            background: var(--accent);
+            margin-left: 4px;
+            animation: blink 1s infinite;
+            vertical-align: middle;
+        }
+
+        /* Agenda Feature */
+        .agenda-grid {
+            margin-top: 24px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 16px;
+            position: relative;
+        }
+
+        .agenda-days {
+            display: flex;
+            justify-content: space-between;
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 0.7rem;
+            font-family: var(--font-mono);
+            margin-bottom: 12px;
+        }
+
+        .agenda-slots {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 6px;
+            margin-bottom: 16px;
+        }
+
+        .agenda-slot {
+            height: 24px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 4px;
+        }
+
+        .agenda-slot.active {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .agenda-btn {
+            background: var(--accent);
+            color: white;
+            text-align: center;
+            padding: 6px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+
+        .auto-cursor {
+            position: absolute;
+            top: 20px;
+            left: 10px;
+            width: 24px;
+            height: 24px;
+            fill: var(--accent);
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
+            z-index: 10;
+            animation: moveCursor 3s infinite ease-in-out alternate;
+        }
+
+        @keyframes moveCursor {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(80px, 80px);
+            }
+        }
+
+        /* === MANIFESTO === */
+        .manifesto-section {
+            position: relative;
+            width: 100%;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 20px;
+            overflow: hidden;
+            background: #050505;
+            z-index: 10;
+        }
+
+        .manifesto-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, rgba(0, 212, 126, 0.1) 0%, transparent 70%),
+                repeating-linear-gradient(rgba(255, 255, 255, 0.03) 0px, rgba(255, 255, 255, 0.03) 1px, transparent 1px, transparent 40px),
+                repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.03) 0px, rgba(255, 255, 255, 0.03) 1px, transparent 1px, transparent 40px);
+            z-index: 0;
+        }
+
+        .manifesto-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, var(--bg-1), transparent, var(--bg-1));
+            z-index: 1;
+        }
+
+        .manifesto-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            text-align: center;
+        }
+
+        .manifesto-line {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1.2;
+            letter-spacing: -1px;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s cubic-bezier(0.2, 0.8, 0.2, 1), transform 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        .manifesto-line.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .manifesto-line.delay-1 {
+            transition-delay: 0.3s;
+        }
+
+        .manifesto-line.delay-2 {
+            transition-delay: 0.6s;
+        }
+
+        .manifesto-line.delay-3 {
+            transition-delay: 0.9s;
+        }
+
+        .manifesto-ital {
+            font-family: var(--font-serif);
+            font-style: italic;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .manifesto-highlight {
+            font-family: var(--font-serif);
+            font-style: italic;
+            font-weight: 500;
+            color: var(--primary);
+        }
+
+        /* === STACKED ARCHIVE (PROCESO) === */
+        .archive-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 120px;
+        }
+
+        .archive-card {
+            position: sticky;
+            top: 120px;
+            width: 90%;
+            max-width: 1000px;
+            min-height: 500px;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 40px;
+            display: flex;
+            padding: 0;
+            margin-bottom: 40px;
+            box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            transition: transform 0.3s ease-out, filter 0.3s ease-out;
+        }
+
+        .archive-card:nth-child(1) {
+            z-index: 1;
+        }
+
+        .archive-card:nth-child(2) {
+            z-index: 2;
+        }
+
+        .archive-card:nth-child(3) {
+            z-index: 3;
+        }
+
+        .archive-content {
+            width: 50%;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .archive-anim {
+            width: 50%;
+            background: #080808;
+            border-left: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+            .manifesto-line {
+                font-size: 2rem;
+            }
+
+            .archive-card {
+                flex-direction: column;
+                position: relative;
+                top: 0;
+                min-height: auto;
+                margin-bottom: 24px;
+            }
+
+            .archive-content,
+            .archive-anim {
+                width: 100%;
+            }
+
+            .archive-anim {
+                height: 250px;
+                border-left: none;
+                border-top: 1px solid rgba(255, 255, 255, 0.05);
+            }
+
+            .archive-content {
+                padding: 30px 20px;
+            }
+
+            .archive-content h3 {
+                font-size: 1.6rem !important;
+                margin-bottom: 12px !important;
+            }
+
+            .archive-content p {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* KEYFRAMES FOR ARCHIVE ANIMATIONS */
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes scan-line {
+            0% {
+                -webkit-transform: translateY(-100px);
+            }
+
+            100% {
+                -webkit-transform: translateY(100px);
+            }
+        }
+
+        @keyframes scan-line {
+            0% {
+                transform: translateY(-100px);
+            }
+
+            100% {
+                transform: translateY(100px);
+            }
+        }
+
+        @-webkit-keyframes dash {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @keyframes dash {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        /* Legacy Process Track hidden */
+        .process-track {
+            display: none;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            position: relative;
+        }
+
+        .process-track::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 12%;
+            right: 12%;
+            height: 1px;
+            background: linear-gradient(90deg, var(--primary), var(--accent), var(--primary));
+            opacity: 0.15;
+        }
+
+        .process-step {
+            text-align: center;
+            position: relative;
+        }
+
+        .step-num {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--dark-1);
+            border: 2px solid rgba(var(--primary-rgb), 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            font-family: var(--font-mono);
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary);
+            position: relative;
+            z-index: 2;
+            transition: all 0.4s;
+        }
+
+        .process-step:hover .step-num {
+            border-color: var(--primary);
+            box-shadow: 0 0 30px rgba(var(--primary-rgb), 0.2);
+        }
+
+        .process-step h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .process-step p {
+            font-size: 0.85rem;
+            color: var(--text-2);
+            line-height: 1.65;
+        }
+
+        .step-badge {
+            display: inline-block;
+            margin-top: 14px;
+            font-family: var(--font-mono);
+            font-size: 0.68rem;
+            font-weight: 600;
+            color: var(--primary);
+            background: rgba(var(--primary-rgb), 0.06);
+            border: 1px solid rgba(var(--primary-rgb), 0.12);
+            padding: 5px 14px;
+            border-radius: 50px;
+        }
+
+        /* === STORY === */
+        .story-layout {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .story-text {
+            font-size: 1.08rem;
+            color: var(--text-2);
+            line-height: 1.85;
+            margin-bottom: 20px;
+        }
+
+        .story-text strong {
+            color: var(--text-0);
+        }
+
+        .story-quote {
+            margin: 40px 0;
+            padding: 32px 36px;
+            background: rgba(var(--primary-rgb), 0.03);
+            border: 1px solid rgba(var(--primary-rgb), 0.1);
+            border-left: 3px solid var(--primary);
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            font-size: 1.15rem;
+            font-weight: 600;
+            line-height: 1.65;
+            color: var(--text-1);
+        }
+
+        .story-quote footer {
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            color: var(--text-3);
+            font-weight: 400;
+            margin-top: 14px;
+        }
+
+        /* === PRICING === */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            align-items: start;
+        }
+
+        .price-card {
+            background: rgba(6, 14, 10, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            padding: 40px 28px;
+            transition: all 0.5s var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .price-card.featured {
+            border-color: rgba(var(--primary-rgb), 0.3);
+            box-shadow: 0 0 50px rgba(var(--primary-rgb), 0.08);
+        }
+
+        .price-card.featured::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+        }
+
+        .price-badge {
+            position: absolute;
+            top: -1px;
+            right: 28px;
+            background: var(--primary);
+            color: var(--dark-0);
+            font-family: var(--font-mono);
+            font-size: 0.65rem;
+            font-weight: 700;
+            padding: 6px 14px;
+            border-radius: 0 0 8px 8px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .price-tier {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--text-3);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 16px;
+        }
+
+        .price-amount {
+            font-size: 2.6rem;
+            font-weight: 900;
+            line-height: 1;
+            margin-bottom: 4px;
+            letter-spacing: -0.02em;
+        }
+
+        .price-note {
+            font-size: 0.78rem;
+            color: var(--text-3);
+            margin-bottom: 28px;
+            font-family: var(--font-mono);
+        }
+
+        .price-features {
+            list-style: none;
+            margin-bottom: 32px;
+        }
+
+        .price-features li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 10px 0;
+            font-size: 0.88rem;
+            color: var(--text-2);
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .price-features li:last-child {
+            border: none;
+        }
+
+        .price-features .ico {
+            flex-shrink: 0;
+            font-size: 0.85rem;
+        }
+
+        .price-features .ico.yes {
+            color: var(--primary);
+        }
+
+        .price-features .ico.no {
+            color: var(--text-3);
+        }
+
+        .price-features li strong {
+            color: var(--text-0);
+        }
+
+        .price-btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 16px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+            border: none;
+            letter-spacing: 0.3px;
+        }
+
+        .price-btn-fill {
+            background: var(--primary);
+            color: var(--dark-0);
+            box-shadow: 0 4px 20px rgba(var(--primary-rgb), 0.3);
+        }
+
+        .price-btn-fill:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(var(--primary-rgb), 0.45);
+        }
+
+        .price-btn-outline {
+            background: transparent;
+            color: var(--text-2);
+            border: 1px solid var(--glass-border);
+        }
+
+        .price-btn-outline:hover {
+            border-color: rgba(var(--primary-rgb), 0.3);
+            color: var(--primary);
+        }
+
+        /* === GUARANTEE === */
+        .guarantee-wrapper {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .guarantee-card {
+            text-align: center;
+            padding: 48px 40px;
+            background: rgba(var(--primary-rgb), 0.03);
+            border: 1px solid rgba(var(--primary-rgb), 0.1);
+            border-radius: var(--radius);
+            position: relative;
+        }
+
+        .guarantee-card .material-icons-outlined {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 16px;
+        }
+
+        .guarantee-card h3 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 14px;
+        }
+
+        .guarantee-card p {
+            font-size: 1rem;
+            color: var(--text-2);
+            max-width: 500px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* === FAQ === */
+        .faq-list {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .faq-trigger {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 0;
+            background: none;
+            border: none;
+            color: var(--text-0);
+            font-size: 1.02rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-align: left;
+            font-family: var(--font-display);
+            transition: color 0.3s;
+        }
+
+        .faq-trigger:hover {
+            color: var(--primary);
+        }
+
+        .faq-trigger .faq-ico {
+            font-family: var(--font-mono);
+            font-size: 1.3rem;
+            color: var(--text-3);
+            transition: transform 0.4s var(--transition), color 0.3s;
+            flex-shrink: 0;
+        }
+
+        .faq-item.open .faq-ico {
+            transform: rotate(45deg);
+            color: var(--primary);
+        }
+
+        .faq-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s var(--transition);
+        }
+
+        .faq-item.open .faq-body {
+            max-height: 300px;
+        }
+
+        .faq-body p {
+            padding-bottom: 24px;
+            color: var(--text-2);
+            font-size: 0.95rem;
+            line-height: 1.75;
+        }
+
+        /* === CTA === */
+        .cta-section {
+            padding: 140px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section .hero-orb {
+            width: 400px;
+            height: 400px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(var(--primary-rgb), 0.06);
+        }
+
+        .cta-scarcity {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--warning);
+            background: rgba(255, 184, 0, 0.06);
+            border: 1px solid rgba(255, 184, 0, 0.15);
+            padding: 8px 18px;
+            border-radius: 50px;
+            margin-bottom: 28px;
+            letter-spacing: 0.5px;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-content h2 {
+            font-size: clamp(2rem, 4.5vw, 3.2rem);
+            font-weight: 900;
+            margin-bottom: 16px;
+            letter-spacing: -0.025em;
+        }
+
+        .cta-content>p {
+            font-size: 1.1rem;
+            color: var(--text-2);
+            max-width: 520px;
+            margin: 0 auto 40px;
+        }
+
+        .cta-trust {
+            margin-top: 20px;
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--text-3);
+            letter-spacing: 0.5px;
+        }
+
+        /* === FOOTER === */
+        .site-footer {
+            padding: 40px 0 28px;
+            border-top: 1px solid var(--glass-border);
+        }
+
+        .footer-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-brand {
+            font-family: var(--font-mono);
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: var(--text-3);
+        }
+
+        .footer-brand span {
+            color: var(--primary);
+        }
+
+        .footer-copy {
+            font-size: 0.75rem;
+            color: var(--text-3);
+        }
+
+        /* === WHATSAPP FLOAT === */
+        .wa-float {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            z-index: 998;
+            width: 58px;
+            height: 58px;
+            border-radius: 16px;
+            background: #25D366;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 24px rgba(37, 211, 102, 0.35);
+            transition: all 0.3s;
+        }
+
+        .wa-float:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 10px 40px rgba(37, 211, 102, 0.5);
+        }
+
+        .wa-float svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+
+        /* === CONTACT FORM === */
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .contact-info {}
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-detail-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .contact-detail-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: rgba(var(--primary-rgb), 0.06);
+            border: 1px solid rgba(var(--primary-rgb), 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-detail-icon .material-icons-outlined {
+            font-size: 1.2rem;
+            color: var(--primary);
+        }
+
+        .contact-detail-label {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            color: var(--text-3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-detail-value {
+            font-size: 0.95rem;
+            color: var(--text-1);
+            font-weight: 500;
+        }
+
+        .form-card {
+            background: rgba(6, 14, 10, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .form-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(var(--primary-rgb), 0.3), transparent);
+        }
+
+        .form-card-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 20px;
+            border-bottom: 1px solid var(--glass-border);
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .form-card-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .form-card-label {
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            color: var(--text-3);
+            flex: 1;
+            text-align: center;
+        }
+
+        .form-card-status {
+            font-family: var(--font-mono);
+            font-size: 0.68rem;
+            color: var(--text-3);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .contact-form {
+            padding: 28px 24px 24px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-label {
+            display: block;
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: var(--text-2);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 14px 16px;
+            background: rgba(0, 0, 0, 0.25);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-xs);
+            color: var(--text-0);
+            font-family: var(--font-display);
+            font-size: 0.92rem;
+            transition: all 0.3s;
+            outline: none;
+        }
+
+        .form-input::placeholder {
+            color: var(--text-3);
+        }
+
+        .form-input:focus {
+            border-color: rgba(var(--primary-rgb), 0.4);
+            box-shadow: 0 0 0 3px rgba(var(--primary-rgb), 0.08), 0 0 20px rgba(var(--primary-rgb), 0.06);
+            background: rgba(0, 0, 0, 0.35);
+        }
+
+        .form-select {
+            appearance: none;
+            -webkit-appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%237A9E8A' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+            padding-right: 40px;
+            cursor: pointer;
+        }
+
+        .form-select option {
+            background: var(--dark-2);
+            color: var(--text-0);
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .form-submit-btn {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px;
+            background: var(--primary);
+            color: var(--dark-0);
+            border: none;
+            border-radius: var(--radius-xs);
+            font-weight: 700;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.4s var(--transition);
+            box-shadow: 0 4px 24px rgba(var(--primary-rgb), 0.3);
+            letter-spacing: 0.3px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .form-submit-btn::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.12) 0%, transparent 60%);
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+
+        .form-submit-btn:hover::after {
+            opacity: 1;
+        }
+
+        .form-submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 36px rgba(var(--primary-rgb), 0.45);
+        }
+
+        .form-submit-btn:active {
+            transform: translateY(0);
+        }
+
+        .form-submit-btn.loading .btn-text {
+            opacity: 0;
+        }
+
+        .form-submit-btn.loading .btn-icon {
+            animation: blink 0.8s ease infinite;
+        }
+
+        .form-disclaimer {
+            text-align: center;
+            font-size: 0.75rem;
+            color: var(--text-3);
+            margin-top: 14px;
+        }
+
+        .form-success {
+            padding: 60px 24px;
+            text-align: center;
+        }
+
+        .form-success .success-icon {
+            font-size: 3rem;
+            margin-bottom: 16px;
+        }
+
+        .form-success h3 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .form-success p {
+            color: var(--text-2);
+            font-size: 1rem;
+        }
+
+        /* === RESPONSIVE === */
+        @media (max-width: 1024px) {
+            .hero-layout {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .hero-visual {
+                display: none;
+            }
+
+            .contact-layout {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .pain-grid,
+            .solutions-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .pricing-grid {
+                grid-template-columns: 1fr;
+                max-width: 420px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .price-card.featured {
+                transform: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .nav-mobile-btn {
+                display: flex;
+            }
+
+            .nav-links.open {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(3, 7, 6, 0.95);
+                backdrop-filter: blur(24px);
+                padding: 20px;
+                gap: 8px;
+                border-bottom: 1px solid var(--glass-border);
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 120px 0 80px;
+                min-height: auto;
+            }
+
+            .section {
+                padding: 100px 0;
+            }
+
+            .pain-grid,
+            .solutions-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .process-track {
+                grid-template-columns: 1fr 1fr;
+                gap: 32px;
+            }
+
+            .process-track::before {
+                display: none;
+            }
+
+            .hero-metrics {
+                gap: 32px;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+            }
+
+            .btn-glow,
+            .btn-ghost {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .footer-row {
+                flex-direction: column;
+                gap: 8px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .process-track {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-metrics {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        /* ================================================================
+           NUEVOS MÓDULOS — Nicho iPhone (demo, dólar, ROI, planes, prueba)
+           ================================================================ */
+
+        /* === DEMO BAND ("Probá el bot en vivo") === */
+        .demo-band {
+            padding: 80px 0;
+            position: relative;
+        }
+
+        .demo-card {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 40px;
+            align-items: center;
+            background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.07), rgba(var(--accent-rgb), 0.04));
+            border: 1px solid rgba(var(--primary-rgb), 0.18);
+            border-radius: var(--radius);
+            padding: 48px;
+            overflow: hidden;
+        }
+
+        .demo-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(60% 80% at 85% 20%, rgba(var(--primary-rgb), 0.12), transparent 70%);
+            pointer-events: none;
+        }
+
+        .demo-copy {
+            position: relative;
+            z-index: 2;
+        }
+
+        .demo-copy .demo-eyebrow {
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--primary);
+            margin-bottom: 14px;
+        }
+
+        .demo-copy h3 {
+            font-size: clamp(1.6rem, 3vw, 2.3rem);
+            font-weight: 800;
+            line-height: 1.12;
+            letter-spacing: -0.02em;
+            margin-bottom: 14px;
+        }
+
+        .demo-copy p {
+            color: var(--text-2);
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 28px;
+            max-width: 460px;
+        }
+
+        .demo-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .demo-chip {
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            color: var(--text-1);
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--glass-border);
+            padding: 6px 12px;
+            border-radius: 50px;
+        }
+
+        .demo-visual {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+        }
+
+        .demo-phone {
+            width: 230px;
+            border-radius: 32px;
+            border: 1px solid var(--glass-border);
+            background: rgba(6, 14, 10, 0.85);
+            box-shadow: 0 30px 70px rgba(0, 0, 0, 0.55);
+            padding: 14px;
+            animation: float-slow 8s ease-in-out infinite;
+        }
+
+        .demo-phone .demo-notch {
+            width: 90px;
+            height: 6px;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.12);
+            margin: 4px auto 14px;
+        }
+
+        .demo-bubble {
+            font-size: 0.82rem;
+            line-height: 1.5;
+            padding: 10px 14px;
+            border-radius: 14px;
+            margin-bottom: 10px;
+            max-width: 85%;
+        }
+
+        .demo-bubble.user {
+            background: rgba(var(--primary-rgb), 0.16);
+            color: var(--text-0);
+            margin-left: auto;
+            border-bottom-right-radius: 4px;
+        }
+
+        .demo-bubble.bot {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-1);
+            border-bottom-left-radius: 4px;
+        }
+
+        /* === SPOTLIGHT DEL DÓLAR === */
+        .dolar-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .dolar-control {
+            background: rgba(6, 14, 10, 0.5);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            padding: 32px;
+            backdrop-filter: blur(10px);
+        }
+
+        .dolar-control .dolar-label {
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            color: var(--text-2);
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .dolar-value {
+            font-family: var(--font-mono);
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 18px;
+        }
+
+        .dolar-value small {
+            font-size: 1rem;
+            color: var(--text-3);
+        }
+
+        input[type="range"].nx-range {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 6px;
+            border-radius: 50px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            outline: none;
+            margin: 6px 0 4px;
+        }
+
+        input[type="range"].nx-range::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: var(--text-0);
+            border: 3px solid var(--primary);
+            cursor: pointer;
+            box-shadow: 0 4px 14px rgba(var(--primary-rgb), 0.5);
+        }
+
+        input[type="range"].nx-range::-moz-range-thumb {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: var(--text-0);
+            border: 3px solid var(--primary);
+            cursor: pointer;
+        }
+
+        .range-hint {
+            display: flex;
+            justify-content: space-between;
+            font-family: var(--font-mono);
+            font-size: 0.68rem;
+            color: var(--text-3);
+        }
+
+        .dolar-table {
+            background: rgba(6, 14, 10, 0.6);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+
+        .dolar-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 22px;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .dolar-row:last-child {
+            border-bottom: none;
+        }
+
+        .dolar-row .model {
+            font-weight: 600;
+            color: var(--text-1);
+        }
+
+        .dolar-row .model small {
+            display: block;
+            font-family: var(--font-mono);
+            font-size: 0.68rem;
+            color: var(--text-3);
+            font-weight: 400;
+        }
+
+        .dolar-row .price {
+            font-family: var(--font-mono);
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: var(--primary);
+            transition: transform 0.3s var(--transition);
+        }
+
+        .dolar-row .price.flash {
+            transform: scale(1.12);
+            color: var(--primary-light);
+        }
+
+        /* === CALCULADORA DE ROI === */
+        .roi-wrap {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: stretch;
+        }
+
+        .roi-inputs,
+        .roi-result {
+            background: rgba(6, 14, 10, 0.5);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            padding: 36px;
+            backdrop-filter: blur(10px);
+        }
+
+        .roi-field {
+            margin-bottom: 30px;
+        }
+
+        .roi-field label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.92rem;
+            color: var(--text-1);
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .roi-field label b {
+            font-family: var(--font-mono);
+            color: var(--primary);
+        }
+
+        .roi-result {
+            background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.08), rgba(var(--accent-rgb), 0.04));
+            border-color: rgba(var(--primary-rgb), 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .roi-result .roi-label {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            color: var(--text-2);
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .roi-big {
+            font-size: clamp(2.4rem, 6vw, 3.6rem);
+            font-weight: 900;
+            line-height: 1;
+            letter-spacing: -0.02em;
+            margin-bottom: 6px;
+        }
+
+        .roi-sub {
+            color: var(--text-2);
+            font-size: 0.95rem;
+            margin-bottom: 22px;
+        }
+
+        .roi-pay {
+            font-family: var(--font-mono);
+            font-size: 0.95rem;
+            color: var(--primary);
+            background: rgba(var(--primary-rgb), 0.08);
+            border: 1px solid rgba(var(--primary-rgb), 0.18);
+            border-radius: 50px;
+            padding: 10px 18px;
+            display: inline-block;
+            margin: 0 auto;
+        }
+
+        .roi-disclaimer {
+            font-size: 0.72rem;
+            color: var(--text-3);
+            margin-top: 18px;
+            line-height: 1.5;
+        }
+
+        /* === PLANES === */
+        .pricing-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            margin: 0 auto 52px;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--text-2);
+        }
+
+        .pricing-toggle .on {
+            color: var(--text-0);
+            font-weight: 600;
+        }
+
+        .toggle-switch {
+            position: relative;
+            width: 56px;
+            height: 30px;
+            border-radius: 50px;
+            background: rgba(var(--primary-rgb), 0.15);
+            border: 1px solid rgba(var(--primary-rgb), 0.3);
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .toggle-switch .knob {
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: var(--primary);
+            transition: transform 0.35s var(--transition);
+            box-shadow: 0 2px 8px rgba(var(--primary-rgb), 0.5);
+        }
+
+        .toggle-switch.annual .knob {
+            transform: translateX(26px);
+        }
+
+        .save-pill {
+            font-size: 0.68rem;
+            color: var(--primary);
+            background: rgba(var(--primary-rgb), 0.1);
+            border: 1px solid rgba(var(--primary-rgb), 0.2);
+            border-radius: 50px;
+            padding: 3px 10px;
+        }
+
+        .plans-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+            align-items: stretch;
+        }
+
+        .plan-card {
+            background: rgba(6, 14, 10, 0.5);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            padding: 38px 30px;
+            backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            transition: all 0.4s var(--transition);
+        }
+
+        .plan-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(var(--primary-rgb), 0.3);
+        }
+
+        .plan-card.featured {
+            border-color: rgba(var(--primary-rgb), 0.45);
+            background: linear-gradient(160deg, rgba(var(--primary-rgb), 0.08), rgba(6, 14, 10, 0.6));
+            box-shadow: 0 24px 60px -28px rgba(var(--primary-rgb), 0.6);
+        }
+
+        .plan-badge {
+            position: absolute;
+            top: -13px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: var(--font-mono);
+            font-size: 0.66rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--dark-0);
+            background: var(--primary);
+            padding: 5px 16px;
+            border-radius: 50px;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .plan-name {
+            font-size: 1.2rem;
+            font-weight: 800;
+            margin-bottom: 4px;
+        }
+
+        .plan-for {
+            font-size: 0.8rem;
+            color: var(--text-3);
+            margin-bottom: 22px;
+            min-height: 34px;
+        }
+
+        .plan-price {
+            display: flex;
+            align-items: baseline;
+            gap: 6px;
+            margin-bottom: 4px;
+        }
+
+        .plan-price .amount {
+            font-size: 2.6rem;
+            font-weight: 900;
+            letter-spacing: -0.02em;
+        }
+
+        .plan-price .cur {
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            color: var(--text-2);
+        }
+
+        .plan-price .per {
+            font-size: 0.85rem;
+            color: var(--text-3);
+        }
+
+        .plan-annual-note {
+            font-size: 0.74rem;
+            color: var(--primary);
+            font-family: var(--font-mono);
+            min-height: 18px;
+            margin-bottom: 24px;
+        }
+
+        .plan-feats {
+            list-style: none;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .plan-feats li {
+            display: flex;
+            gap: 10px;
+            font-size: 0.88rem;
+            color: var(--text-1);
+            line-height: 1.45;
+        }
+
+        .plan-feats li .material-icons-outlined {
+            font-size: 17px;
+            color: var(--primary);
+            margin-top: 2px;
+            flex-shrink: 0;
+        }
+
+        .plan-cta {
+            margin-top: auto;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            text-align: center;
+            padding: 14px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: all 0.3s var(--transition);
+        }
+
+        .plan-cta.solid {
+            background: var(--primary);
+            color: var(--dark-0);
+            box-shadow: 0 4px 24px rgba(var(--primary-rgb), 0.35);
+        }
+
+        .plan-cta.solid:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 34px rgba(var(--primary-rgb), 0.5);
+        }
+
+        .plan-cta.outline {
+            background: transparent;
+            color: var(--text-1);
+            border: 1px solid var(--glass-border);
+        }
+
+        .plan-cta.outline:hover {
+            border-color: rgba(var(--primary-rgb), 0.4);
+            color: var(--primary);
+        }
+
+        .founder-note {
+            max-width: 760px;
+            margin: 36px auto 0;
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--text-2);
+            background: rgba(var(--primary-rgb), 0.04);
+            border: 1px solid rgba(var(--primary-rgb), 0.12);
+            border-radius: var(--radius-sm);
+            padding: 18px 24px;
+            line-height: 1.6;
+        }
+
+        .founder-note b {
+            color: var(--primary);
+        }
+
+        /* === PRUEBA SOCIAL: capturas reales flotando (efecto wow) === */
+        .proof-stage {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+            margin-top: 20px;
+        }
+
+        .proof-shot {
+            position: relative;
+            border-radius: 26px;
+            border: 1px solid var(--glass-border);
+            background: rgba(6, 14, 10, 0.7);
+            padding: 12px;
+            box-shadow: 0 30px 70px -30px rgba(0, 0, 0, 0.8);
+            transition: transform 0.5s var(--transition), box-shadow 0.5s var(--transition);
+            animation: float-medium 9s ease-in-out infinite;
+        }
+
+        .proof-shot:nth-child(2) {
+            animation-delay: -3s;
+            margin-top: -28px;
+        }
+
+        .proof-shot:nth-child(3) {
+            animation-delay: -6s;
+        }
+
+        .proof-shot:hover {
+            transform: translateY(-12px) scale(1.03) rotate(-0.6deg);
+            box-shadow: 0 40px 90px -30px rgba(var(--primary-rgb), 0.45);
+            z-index: 5;
+        }
+
+        .proof-shot img {
+            width: 100%;
+            border-radius: 16px;
+            display: block;
+        }
+
+        /* Placeholder mientras no hay captura real */
+        .proof-shot .proof-placeholder {
+            aspect-ratio: 9 / 16;
+            border-radius: 16px;
+            background:
+                repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.02) 0 12px, transparent 12px 24px),
+                rgba(var(--primary-rgb), 0.04);
+            border: 1px dashed rgba(var(--primary-rgb), 0.25);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            text-align: center;
+            color: var(--text-3);
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            padding: 20px;
+        }
+
+        .proof-shot .proof-placeholder .material-icons-outlined {
+            font-size: 2rem;
+            color: rgba(var(--primary-rgb), 0.4);
+        }
+
+        /* Pills flotantes sobre la captura */
+        .fpill {
+            position: absolute;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(6, 14, 10, 0.92);
+            border: 1px solid rgba(var(--primary-rgb), 0.3);
+            color: var(--text-0);
+            font-family: var(--font-mono);
+            font-size: 0.68rem;
+            font-weight: 600;
+            padding: 7px 12px;
+            border-radius: 50px;
+            box-shadow: 0 14px 34px rgba(0, 0, 0, 0.5);
+            z-index: 6;
+            animation: float-slow 7s ease-in-out infinite;
+        }
+
+        .fpill .dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--primary);
+            box-shadow: 0 0 8px var(--primary);
+        }
+
+        .fpill.tl {
+            top: 8px;
+            left: -18px;
+        }
+
+        .fpill.br {
+            bottom: 18px;
+            right: -16px;
+            animation-delay: -3.5s;
+        }
+
+        .proof-trust {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px 28px;
+            margin-top: 48px;
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--text-2);
+        }
+
+        .proof-trust span {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .proof-trust b {
+            color: var(--primary);
+        }
+
+        /* === Diferenciador / foso === */
+        .moat-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .moat-card {
+            background: rgba(6, 14, 10, 0.5);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            padding: 30px 28px;
+            backdrop-filter: blur(10px);
+            transition: all 0.4s var(--transition);
+        }
+
+        .moat-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(var(--primary-rgb), 0.3);
+        }
+
+        .moat-card .material-icons-outlined {
+            font-size: 1.9rem;
+            color: var(--primary);
+            margin-bottom: 14px;
+        }
+
+        .moat-card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .moat-card p {
+            font-size: 0.9rem;
+            color: var(--text-2);
+            line-height: 1.6;
+        }
+
+        /* === Responsive de los módulos nuevos === */
+        @media (max-width: 1024px) {
+
+            .demo-card,
+            .dolar-grid,
+            .roi-wrap {
+                grid-template-columns: 1fr;
+            }
+
+            .plans-grid {
+                grid-template-columns: 1fr;
+                max-width: 460px;
+                margin: 0 auto;
+            }
+
+            .moat-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .proof-stage {
+                grid-template-columns: 1fr;
+                max-width: 320px;
+                margin: 20px auto 0;
+            }
+
+            .proof-shot:nth-child(2) {
+                margin-top: 0;
+            }
+
+            .demo-card {
+                padding: 32px 24px;
+            }
+
+            .fpill.tl {
+                left: 6px;
+            }
+
+            .fpill.br {
+                right: 6px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- === NAVBAR === -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#" class="nav-brand" style="display: flex; align-items: center; gap: 8px;">
+                <svg width="34" height="34" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    style="filter: drop-shadow(0 0 8px rgba(0, 212, 126, 0.4));">
+                    <defs>
+                        <linearGradient id="nGradNav1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#00D47E" />
+                            <stop offset="100%" stop-color="#00A3FF" />
+                        </linearGradient>
+                        <linearGradient id="nGradNav2" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#33FFAA" />
+                            <stop offset="100%" stop-color="#00D47E" />
+                        </linearGradient>
+                    </defs>
+                    <rect x="18" y="18" width="16" height="64" rx="6" fill="url(#nGradNav1)" />
+                    <rect x="66" y="18" width="16" height="64" rx="6" fill="url(#nGradNav1)" />
+                    <path d="M26 26 L74 74" stroke="url(#nGradNav2)" stroke-width="16" stroke-linecap="round" />
+                </svg>
+                <div class="nav-brand-text" style="font-size: 1.15rem; margin-top: 2px;">Nexora<span>iPhone</span></div>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#problema">El Problema</a>
+                <a href="#soluciones">Cómo funciona</a>
+                <a href="#demo">Demo en vivo</a>
+                <a href="#planes">Planes</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contacto" class="nav-cta-btn">Quiero empezar →</a>
+            </div>
+            <button class="nav-mobile-btn" onclick="document.getElementById('navLinks').classList.toggle('open')"
+                aria-label="Menú">
+                <span class="material-icons-outlined">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- === HERO === -->
+    <section class="hero" id="inicio">
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-orb hero-orb-3"></div>
+        <div class="hero-grid-bg"></div>
+        <div class="container">
+            <div class="hero-layout">
+                <div class="hero-content">
+                    <div class="hero-tag reveal">
+                        <span class="pulse-dot"></span>
+                        Pre-entrenado para iPhone · WhatsApp + Instagram
+                    </div>
+                    <h1 class="reveal reveal-delay-1">El vendedor de iPhones con IA que atiende WhatsApp e Instagram y <span class="gradient-text">no pierde un cliente</span></h1>
+                    <p class="hero-desc reveal reveal-delay-2">Responde en segundos con tono de vendedor real, entiende los audios, pasa precios reales y filtra quién quiere comprar. Vos cobrás — él atiende, 24/7.</p>
+                    <div class="hero-actions reveal reveal-delay-3">
+                        <!-- DEMO: por ahora apunta al bot por WhatsApp. Cuando tengas el sandbox público, cambiá este link. -->
+                        <a href="https://wa.me/5493854456059?text=Hola!%20Quiero%20probar%20el%20bot%20de%20Nexora" target="_blank" rel="noopener" class="btn-glow">Probá el bot por WhatsApp →</a>
+                        <a href="#planes" class="btn-ghost">Ver planes →</a>
+                    </div>
+                    <div class="hero-metrics reveal reveal-delay-4">
+                        <div class="hero-metric">
+                            <div class="val">24/7</div>
+                            <div class="lbl">Atiende, nunca duerme</div>
+                        </div>
+                        <div class="hero-metric">
+                            <div class="val">&lt;30s</div>
+                            <div class="lbl">En la primera respuesta</div>
+                        </div>
+                        <div class="hero-metric">
+                            <div class="val">1 venta</div>
+                            <div class="lbl">Y ya pagó el mes</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <!-- Code snippet card -->
+                    <div class="code-card">
+                        <div class="code-card-header">
+                            <span class="code-dot r"></span>
+                            <span class="code-dot y"></span>
+                            <span class="code-dot g"></span>
+                            <span class="code-card-file">vendedor-iphone.ts</span>
+                        </div>
+                        <div class="code-card-body">
+                            <span class="kw">class</span> <span class="fn">VendedorIA</span> {<br>
+                            &nbsp;&nbsp;<span class="kw">constructor</span>(<span class="str">local</span>) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">this</span>.<span class="fn">rubro</span> = <span
+                                class="str">"iPhone"</span>;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">this</span>.<span class="fn">precios</span> =
+                            <span class="str">"atados al dólar"</span>;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">this</span>.<span class="fn">crm</span> = <span
+                                class="str">"automático"</span>;<br>
+                            &nbsp;&nbsp;}<br>
+                            &nbsp;&nbsp;<span class="cm">// Atiende, califica y agenda solo</span><br>
+                            &nbsp;&nbsp;<span class="fn">venderMientrasDormís</span>();<br>
+                            }
+                        </div>
+                    </div>
+                    <!-- Chat card -->
+                    <div class="chat-card" id="heroChat">
+                        <div class="chat-card-header">
+                            <div class="chat-avatar-sm">IA</div>
+                            <div class="chat-meta">
+                                <div class="chat-name-sm">Tu local + Nexora</div>
+                                <div class="chat-status-sm">En línea</div>
+                            </div>
+                        </div>
+                        <div class="chat-msgs">
+                            <div class="chat-msg chat-msg-user" data-delay="600">tenés iphone 13 de 128? 🟢</div>
+                            <div class="chat-msg chat-msg-bot" data-delay="1800">¡Buenas! Sí, tengo. ¿Nuevo o usado? Te
+                                paso precio al toque 🔥</div>
+                            <div class="chat-msg chat-msg-user" data-delay="3200">🎤 Nota de voz (0:09)</div>
+                            <div class="chat-msg chat-msg-bot" data-delay="4600">Escuché tu audio 👌 El 13 de 128 nuevo
+                                te queda al dólar de hoy. ¿Entregás algo en parte de pago?</div>
+                            <div class="chat-msg chat-msg-alert" data-delay="6000">⚡ Lead calificado (score 88) → te
+                                avisé al toque</div>
+                        </div>
+                    </div>
+                    <!-- Matte stat card -->
+                    <div class="matte-card">
+                        <div class="matte-label">Precios</div>
+                        <div class="matte-value">al dólar</div>
+                        <div class="matte-sub">se recalculan solos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === PAIN SECTION === -->
+    <section class="section section-alt" id="problema">
+        <div class="section-divider"></div>
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-number">01 — El problema</div>
+                <h2 class="section-title">Cada consulta que no contestás a tiempo<br>se la lleva el local de al lado</h2>
+                <p class="section-desc">Si vendés iPhones por WhatsApp, estos tres agujeros te están costando ventas reales — hoy, mientras leés esto.</p>
+            </div>
+            <div class="pain-grid">
+                <div class="pain-card reveal">
+                    <div class="pain-icon"><span class="material-icons-outlined">schedule</span></div>
+                    <h3>Te escriben de noche, respondés de día</h3>
+                    <p>Y para cuando contestás, ya compraron en el local de al lado.</p>
+                    <div class="pain-cost">→ Ventas perdidas, cada semana</div>
+                </div>
+                <div class="pain-card reveal reveal-delay-1">
+                    <div class="pain-icon"><span class="material-icons-outlined">loop</span></div>
+                    <h3>Contestás lo mismo 100 veces</h3>
+                    <p>"¿Cuánto está?", "¿permuta?", "¿cuotas?" — todo el día, a mano.</p>
+                    <div class="pain-cost">→ Horas que no facturás</div>
+                </div>
+                <div class="pain-card reveal reveal-delay-2">
+                    <div class="pain-icon"><span class="material-icons-outlined">person_search</span></div>
+                    <h3>Tus leads se pierden en el chat</h3>
+                    <p>Sin CRM no sabés quién quiere comprar. El que iba a comprar, se enfría.</p>
+                    <div class="pain-cost">→ Plata sentada en tu chat</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === SOLUTIONS === -->
+    <section class="section" id="soluciones">
+        <div class="section-divider"></div>
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-number">02 — Cómo funciona</div>
+                <h2 class="section-title">No es un chatbot genérico.<br>Es un vendedor de iPhones que ya sabe el rubro</h2>
+                <p class="section-desc">Viene pre-entrenado: sabe de modelos, capacidad, condición, plan canje, cuotas y dólar. Atiende, asesora y filtra como lo harías vos en tu mejor día.
+                </p>
+            </div>
+            <div class="solutions-grid">
+
+                <!-- Feature 1: Baraja Diagnostica -->
+                <div class="micro-panel reveal">
+                    <h3>Habla como un vendedor real</h3>
+                    <p>Tono argentino, mensajes cortos, cálido. Entiende los audios y junta varios mensajes seguidos para responder a todo junto — no parece un robot.</p>
+                    <div class="deck-container" id="diagnosticDeck">
+                        <div class="deck-card">Entiende audios 🎤</div>
+                        <div class="deck-card">Tono argentino real</div>
+                        <div class="deck-card">Junta tus mensajes</div>
+                    </div>
+                </div>
+
+                <!-- Feature 2: Telemetria -->
+                <div class="micro-panel reveal reveal-delay-1">
+                    <h3>Precios reales, nunca inventa</h3>
+                    <p>Consulta tu catálogo y responde el precio exacto del momento, atado al dólar. Nunca se inventa un modelo ni un número.</p>
+                    <div class="telemetry-box">
+                        <div class="telemetry-header">
+                            <div class="telemetry-dot"></div>
+                            <span>SYSTEM_LOG</span>
+                        </div>
+                        <div class="term-line">&gt; root@nexora:~$ ./start.sh</div>
+                        <div class="term-active">&gt; <span id="telemetryText">Iniciando...</span><span
+                                class="term-cursor"></span></div>
+                    </div>
+                </div>
+
+                <!-- Feature 3: Agenda Cursor -->
+                <div class="micro-panel reveal reveal-delay-2">
+                    <h3>Califica, agenda y te avisa</h3>
+                    <p>Pone un score 0-100 a cada consulta, agenda la llamada cuando es mayorista o permuta, y si entrás vos al chat, el bot se pausa solo.</p>
+                    <div class="agenda-grid">
+                        <div class="agenda-days"><span>L</span><span>M</span><span>X</span><span
+                                style="color:white;font-weight:bold;">J</span><span>V</span></div>
+                        <div class="agenda-slots">
+                            <div class="agenda-slot"></div>
+                            <div class="agenda-slot"></div>
+                            <div class="agenda-slot"></div>
+                            <div class="agenda-slot"></div>
+                            <div class="agenda-slot"></div>
+                            <div class="agenda-slot"></div>
+                            <div class="agenda-slot"></div>
+                            <div class="agenda-slot"></div>
+                            <div class="agenda-slot active"></div>
+                            <div class="agenda-slot"></div>
+                        </div>
+                        <div class="agenda-btn">Confirmar Slot</div>
+                        <!-- SVG Cursor -->
+                        <svg class="auto-cursor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 2L20 10.6L12.5 13L15.5 19L11.5 21L8.5 15L4 18V2Z" />
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- === DEMO EN VIVO === -->
+    <section class="demo-band" id="demo">
+        <div class="section-divider"></div>
+        <div class="container">
+            <div class="demo-card reveal">
+                <div class="demo-copy">
+                    <div class="demo-eyebrow">▶ Demo en vivo · sin registrarte</div>
+                    <h3>No te lo cuento. Probalo vos ahora mismo.</h3>
+                    <p>Escribile al bot por WhatsApp como si fueras un cliente. Mirá cómo responde, pasa precios, asesora y filtra quién quiere comprar. Mismo tono, en WhatsApp e Instagram.</p>
+                    <div class="demo-chips">
+                        <span class="demo-chip">Responde al toque</span>
+                        <span class="demo-chip">Entiende audios</span>
+                        <span class="demo-chip">WhatsApp + Instagram</span>
+                        <span class="demo-chip">Precios reales</span>
+                    </div>
+                    <!-- DEMO: por ahora apunta al bot por WhatsApp. Cuando tengas el sandbox público, cambiá este link. -->
+                    <a href="https://wa.me/5493854456059?text=Hola!%20Quiero%20probar%20el%20bot%20de%20Nexora" target="_blank" rel="noopener" class="btn-glow">Probá el bot por WhatsApp →</a>
+                </div>
+                <div class="demo-visual">
+                    <div class="demo-phone">
+                        <div class="demo-notch"></div>
+                        <div class="demo-bubble user">hola, tenés el 15 pro? 👀</div>
+                        <div class="demo-bubble bot">¡Buenas! Sí 🙌 ¿De qué capacidad lo buscás, 128 o 256?</div>
+                        <div class="demo-bubble user">256, nuevo</div>
+                        <div class="demo-bubble bot">Joya. Te lo paso al dólar de hoy y, si querés, lo dejás reservado. ¿Entregás un equipo en parte de pago?</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === SPOTLIGHT DEL DÓLAR === -->
+    <section class="section" id="dolar">
+        <div class="section-divider"></div>
+        <div class="container">
+            <div class="section-header center reveal">
+                <div class="section-number">Tu foso #1</div>
+                <h2 class="section-title">El dólar se movió.<br>Tu lista entera se actualiza en 1 clic.</h2>
+                <p class="section-desc">Tus precios están atados al dólar. Cambiás la cotización una vez y todo el catálogo se recalcula solo — el bot siempre pasa el número correcto. Probalo:</p>
+            </div>
+            <div class="dolar-grid reveal">
+                <div class="dolar-control">
+                    <div class="dolar-label">Cotización del dólar (ARS)</div>
+                    <div class="dolar-value">$<span id="dolarRate">1200</span></div>
+                    <input type="range" min="1000" max="1600" value="1200" step="10" class="nx-range" id="dolarRange"
+                        oninput="updateDolar(this.value)" aria-label="Cotización del dólar">
+                    <div class="range-hint">
+                        <span>$1000</span>
+                        <span>arrastrá →</span>
+                        <span>$1600</span>
+                    </div>
+                </div>
+                <div class="dolar-table">
+                    <div class="dolar-row">
+                        <div class="model">iPhone 13 <small>128GB · Nuevo</small></div>
+                        <div class="price" data-usd="520">$—</div>
+                    </div>
+                    <div class="dolar-row">
+                        <div class="model">iPhone 15 <small>128GB · Nuevo</small></div>
+                        <div class="price" data-usd="850">$—</div>
+                    </div>
+                    <div class="dolar-row">
+                        <div class="model">iPhone 15 Pro <small>256GB · Nuevo</small></div>
+                        <div class="price" data-usd="1180">$—</div>
+                    </div>
+                    <div class="dolar-row">
+                        <div class="model">iPhone 15 Pro Max <small>256GB · Nuevo</small></div>
+                        <div class="price" data-usd="1350">$—</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === DIFERENCIADOR / FOSO === -->
+    <section class="section section-alt" id="diferenciador">
+        <div class="section-divider"></div>
+        <div class="container">
+            <div class="section-header center reveal">
+                <div class="section-number">Por qué Nexora</div>
+                <h2 class="section-title">Los chatbots genéricos no saben de iPhones.<br>Este nació para tu rubro.</h2>
+            </div>
+            <div class="moat-grid reveal">
+                <div class="moat-card">
+                    <span class="material-icons-outlined">smartphone</span>
+                    <h3>Pre-entrenado para iPhone</h3>
+                    <p>Modelos, capacidad, condición, plan canje, cuotas y formas de pago argentinas. No le tenés que enseñar el rubro: ya lo sabe.</p>
+                </div>
+                <div class="moat-card">
+                    <span class="material-icons-outlined">currency_exchange</span>
+                    <h3>Precios atados al dólar</h3>
+                    <p>Movés la cotización una vez y se recalcula todo el catálogo. Nadie del rubro genérico hace esto.</p>
+                </div>
+                <div class="moat-card">
+                    <span class="material-icons-outlined">bolt</span>
+                    <h3>Te lo dejamos andando en horas</h3>
+                    <p>Subís tu lista y tu info, lo dejamos listo y probado nosotros. No tocás nada técnico, no esperás semanas.</p>
+                </div>
+                <div class="moat-card">
+                    <span class="material-icons-outlined">pan_tool</span>
+                    <h3>Tomás el control cuando querés</h3>
+                    <p>Si entrás vos a un chat, el bot se pausa solo. Vos cerrás la venta grande; él se encarga de las 100 consultas repetidas.</p>
+                </div>
+            </div>
+            <div class="reveal" style="text-align:center;margin-top:44px;">
+                <a href="#contacto" class="btn-glow">Quiero empezar →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- === MANIFESTO === -->
+    <section class="manifesto-section" id="manifiesto">
+        <div class="manifesto-bg"></div>
+        <div class="manifesto-overlay"></div>
+        <div class="manifesto-content reveal">
+            <div class="manifesto-line" style="color: rgba(255,255,255,0.4); font-size: 1.5rem; margin-bottom: 8px;">Lo
+                normal es ver cómo tu competencia crece.</div>
+            <div class="manifesto-line manifesto-ital delay-1" style="margin-bottom: 60px;">y preguntarse qué están haciendo diferente.
+            </div>
+            <div class="manifesto-line delay-2" style="font-size: 2rem;">Nosotros te preguntamos:</div>
+            <div class="manifesto-line manifesto-highlight delay-3" style="font-size: 3.5rem;">"¿Qué pasa si empezás a responder primero, siempre?"</div>
+        </div>
+    </section>
+
+    <!-- === ARCHIVE (PROCESO) === -->
+    <section class="section section-alt" id="proceso">
+        <div class="container">
+            <div class="section-header center reveal">
+                <div class="section-number">03 — El sistema</div>
+                <h2 class="section-title">Andando en 3 pasos.<br>Sin que toques nada técnico.</h2>
+            </div>
+
+            <div class="archive-wrapper">
+
+                <!-- Card 1 -->
+                <div class="archive-card">
+                    <div class="archive-content">
+                        <div
+                            style="color:var(--primary); font-family:var(--font-mono); font-weight:800; font-size:4.5rem; line-height:1; margin-bottom:16px;">
+                            01</div>
+                        <h3 style="font-size:2.5rem; font-weight:800; margin-bottom:16px;">Subís tu lista</h3>
+                        <p style="color:var(--text-2); line-height:1.6; font-size:1.1rem;">Tu catálogo y tu info. Lo dejamos andando en horas.</p>
+                    </div>
+                    <div class="archive-anim">
+                        <div
+                            style="position:relative; width:150px; height:150px; -webkit-animation:spin 10s linear infinite; animation:spin 10s linear infinite;">
+                            <div
+                                style="position:absolute; inset:0; border:4px dashed var(--primary); border-radius:50%; opacity:0.3; mix-blend-mode:screen;">
+                            </div>
+                            <div
+                                style="position:absolute; inset:20px; border:4px solid var(--accent); border-radius:50%; border-top-color:transparent; -webkit-animation:spin 4s linear infinite reverse; animation:spin 4s linear infinite reverse;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="archive-card">
+                    <div class="archive-content">
+                        <div
+                            style="color:var(--primary); font-family:var(--font-mono); font-weight:800; font-size:4.5rem; line-height:1; margin-bottom:16px;">
+                            02</div>
+                        <h3 style="font-size:2.5rem; font-weight:800; margin-bottom:16px;">El bot atiende</h3>
+                        <p style="color:var(--text-2); line-height:1.6; font-size:1.1rem;">Responde, asesora y califica 24/7. En WhatsApp e Instagram.</p>
+                    </div>
+                    <div class="archive-anim">
+                        <div
+                            style="width:200px; height:200px; border:1px solid rgba(0,212,126,0.3); border-radius:8px; position:relative; overflow:hidden;">
+                            <div
+                                style="width:100%; height:2px; background:var(--primary); box-shadow:0 0 15px var(--primary); -webkit-animation:scan-line 2s ease-in-out infinite alternate; animation:scan-line 2s ease-in-out infinite alternate;">
+                            </div>
+                            <div
+                                style="position:absolute; top:50%; left:50%; -webkit-transform:translate(-50%,-50%); transform:translate(-50%,-50%); color:var(--primary); font-family:var(--font-mono); font-size:10px; opacity:0.5;">
+                                ANALYZING_</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="archive-card">
+                    <div class="archive-content">
+                        <div
+                            style="color:var(--primary); font-family:var(--font-mono); font-weight:800; font-size:4.5rem; line-height:1; margin-bottom:16px;">
+                            03</div>
+                        <h3 style="font-size:2.5rem; font-weight:800; margin-bottom:16px;">Vos cerrás</h3>
+                        <p style="color:var(--text-2); line-height:1.6; font-size:1.1rem;">Te avisa solo cuando hay alguien listo para comprar.</p>
+                    </div>
+                    <div class="archive-anim" style="padding: 20px;">
+                        <svg viewBox="0 0 400 100" width="100%" height="100%"
+                            style="min-width: 250px; max-width: 400px; display: block;">
+                            <path
+                                d="M 0 50 L 100 50 L 120 20 L 140 80 L 160 50 L 260 50 L 280 10 L 300 90 L 320 50 L 400 50"
+                                fill="none" stroke="var(--accent)" stroke-width="3"
+                                style="filter:drop-shadow(0 0 8px rgba(204,88,51,0.5)); stroke-dasharray:1000; stroke-dashoffset:1000; -webkit-animation:dash 3s linear infinite; animation:dash 3s linear infinite;" />
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- === STORY === -->
+    <section class="section" id="historia">
+        <div class="section-divider"></div>
+        <div class="container">
+            <div class="section-header center reveal">
+                <div class="section-number">04 — Mi historia</div>
+                <h2 class="section-title">Primero lo probé en<br>mi propio negocio</h2>
+            </div>
+            <div class="story-layout">
+                <p class="story-text reveal">Durante más de un año y medio tuve un negocio de venta de iPhones. Me
+                    llegaban <strong>más de 30 consultas por día por WhatsApp</strong> — incluso de madrugada. No daba
+                    abasto y perdía ventas por no responder a tiempo.</p>
+                <p class="story-text reveal">Ahí empecé a usar Inteligencia Artificial para resolver mi propio problema:
+                    responder las 24 horas, filtrar quién realmente quería comprar, y que me avise solo cuando había
+                    alguien listo para cerrar. <strong>Funcionó tan bien que dejé de perder ventas.</strong></p>
+                <blockquote class="story-quote reveal">
+                    "No te vendo tecnología que nunca usé. Te doy una solución que yo mismo necesité, construí, y probé
+                    en mi propio negocio."
+                    <footer>— Fundador, Nexora IA</footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- === PRUEBA SOCIAL: capturas reales del bot === -->
+    <section class="section section-alt" id="prueba">
+        <div class="section-divider"></div>
+        <div class="container">
+            <div class="section-header center reveal">
+                <div class="section-number">Prueba real</div>
+                <h2 class="section-title">Así se vende un iPhone por chat</h2>
+                <p class="section-desc">Conversaciones reales de venta. Tu bot atiende con este mismo tono, precios y flujo — en WhatsApp e Instagram.</p>
+            </div>
+
+            <!-- Para cambiar una captura: reemplazá el src por capturas/otra-imagen.jpg -->
+            <div class="proof-stage reveal">
+                <div class="proof-shot">
+                    <span class="fpill tl"><span class="dot"></span> Pasa precios</span>
+                    <img src="capturas/bot-precio-dolar.jpg" loading="lazy" alt="Conversación real: consulta de precio de iPhone 14 Pro y 16 Pro">
+                    <span class="fpill br"><span class="dot"></span> Al dólar</span>
+                </div>
+                <div class="proof-shot">
+                    <span class="fpill tl"><span class="dot"></span> Entiende audios</span>
+                    <img src="capturas/bot-canje-audio.jpg" loading="lazy" alt="Conversación real: plan canje con nota de voz y toma de iPhone 12">
+                    <span class="fpill br"><span class="dot"></span> Plan canje</span>
+                </div>
+                <div class="proof-shot">
+                    <span class="fpill tl"><span class="dot"></span> Catálogo al día</span>
+                    <img src="capturas/bot-17pro.jpg" loading="lazy" alt="Conversación real: precios de iPhone 17 Pro y disponibilidad por pedido">
+                    <span class="fpill br"><span class="dot"></span> Sin vueltas</span>
+                </div>
+            </div>
+
+            <div class="proof-trust reveal">
+                <span><span class="material-icons-outlined" style="font-size:16px;color:var(--primary)">verified</span> Probado en <b>TL IMPORTADOS</b></span>
+                <span><span class="material-icons-outlined" style="font-size:16px;color:var(--primary)">verified</span> En uso en <b>iDevice Store</b></span>
+            </div>
+
+            <div class="reveal" style="text-align:center;margin-top:40px;">
+                <a href="#contacto" class="btn-glow">Quiero empezar →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- === CALCULADORA DE ROI === -->
+    <section class="section" id="roi">
+        <div class="section-divider"></div>
+        <div class="container">
+            <div class="section-header center reveal">
+                <div class="section-number">Hacé el número</div>
+                <h2 class="section-title">¿Cuánto te cuesta hoy<br>no responder a tiempo?</h2>
+                <p class="section-desc">Movelo a tu realidad. Somos conservadores: una consulta no es una venta. El bot recupera 1 de cada 4 consultas que hoy perdés, y de esas se cierra apenas 1 de cada 4.</p>
+            </div>
+            <div class="roi-wrap reveal">
+                <div class="roi-inputs">
+                    <div class="roi-field">
+                        <label>Consultas que perdés por semana <b id="roiLostVal">15</b></label>
+                        <input type="range" min="5" max="60" value="15" step="1" class="nx-range" id="roiLost"
+                            oninput="updateRoi()" aria-label="Consultas perdidas por semana">
+                        <div class="range-hint"><span>5</span><span>60</span></div>
+                    </div>
+                    <div class="roi-field">
+                        <label>Facturación por venta <b><span>USD </span><span id="roiMarginVal">350</span></b></label>
+                        <input type="range" min="300" max="400" value="350" step="10" class="nx-range" id="roiMargin"
+                            oninput="updateRoi()" aria-label="Facturación por venta en dólares">
+                        <div class="range-hint"><span>USD 300</span><span>USD 400</span></div>
+                    </div>
+                    <div class="roi-field" style="margin-bottom:0">
+                        <label>Se convierten en venta <b>~6 de cada 100</b></label>
+                        <div class="range-hint" style="margin-top:6px"><span>Recupera 1 de 4 consultas · cierra 1 de 4 de esas</span></div>
+                    </div>
+                </div>
+                <div class="roi-result">
+                    <div class="roi-label">Facturación recuperada / mes (estimado)</div>
+                    <div class="roi-big gradient-text" id="roiRecovered">USD 1.400</div>
+                    <div class="roi-sub" id="roiUnits">≈ 4 ventas nuevas por mes</div>
+                    <div class="roi-pay" id="roiPays">Con 1 venta recuperada, ya pagaste el plan</div>
+                    <p class="roi-disclaimer">Es facturación, no ganancia. Cuenta conservadora: consultas perdidas × 4,33 semanas × 25% que el bot recupera × 25% que cierran, por tu facturación por venta. Estimación orientativa, no una promesa. Plan Crecimiento: USD 239/mes.</p>
+                </div>
+            </div>
+            <div class="reveal" style="text-align:center;margin-top:44px;">
+                <a href="#contacto" class="btn-glow">Quiero empezar →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- === PLANES === -->
+    <section class="section section-alt" id="planes">
+        <div class="section-divider"></div>
+        <div class="container">
+            <div class="section-header center reveal">
+                <div class="section-number">Planes</div>
+                <h2 class="section-title">Alquilás tu vendedor con IA.<br>Sin setup. Cancelás cuando quieras.</h2>
+                <p class="section-desc">Pagás una mensualidad, no una fortuna por adelantado. Un solo iPhone vendido al mes ya lo paga.</p>
+            </div>
+
+            <div class="pricing-toggle reveal">
+                <span id="lblMonthly">Mensual</span>
+                <div class="toggle-switch annual" id="planToggle" onclick="togglePlan()" role="switch" aria-label="Cambiar facturación mensual o anual">
+                    <div class="knob"></div>
+                </div>
+                <span class="on" id="lblAnnual">Anual <span class="save-pill">40% OFF</span></span>
+            </div>
+
+            <div class="plans-grid reveal">
+                <div class="plan-card">
+                    <div class="plan-name">Crecimiento</div>
+                    <div class="plan-for">El minorista que quiere dejar de perder ventas y empezar a escalar.</div>
+                    <div class="plan-price">
+                        <span class="cur">USD</span><span class="amount" data-monthly="239" data-annual="143">143</span><span class="per">/mes</span>
+                    </div>
+                    <div class="plan-annual-note" data-annual-note="Un pago de USD 1.721/año (40% OFF)">Un pago de USD 1.721/año (40% OFF)</div>
+                    <ul class="plan-feats">
+                        <li><span class="material-icons-outlined">check</span> Bot de WhatsApp 24/7 con tono real</li>
+                        <li><span class="material-icons-outlined">check</span> Catálogo con precios atados al dólar</li>
+                        <li><span class="material-icons-outlined">check</span> CRM: leads calificados con score</li>
+                        <li><span class="material-icons-outlined">check</span> Responder y tomar el control desde el panel</li>
+                        <li><span class="material-icons-outlined">check</span> "Probá tu bot" + editor de info</li>
+                    </ul>
+                    <a href="#contacto" class="plan-cta outline">Quiero empezar →</a>
+                </div>
+
+                <div class="plan-card featured">
+                    <div class="plan-badge">★ Más elegido</div>
+                    <div class="plan-name">Consolidado</div>
+                    <div class="plan-for">Local con buen flujo, minorista + mayorista, que quiere métricas y equipo.</div>
+                    <div class="plan-price">
+                        <span class="cur">USD</span><span class="amount" data-monthly="449" data-annual="269">269</span><span class="per">/mes</span>
+                    </div>
+                    <div class="plan-annual-note" data-annual-note="Un pago de USD 3.233/año (40% OFF)">Un pago de USD 3.233/año (40% OFF)</div>
+                    <ul class="plan-feats">
+                        <li><span class="material-icons-outlined">check</span> Todo lo de Crecimiento</li>
+                        <li><span class="material-icons-outlined">check</span> Flujos mayorista + plan canje</li>
+                        <li><span class="material-icons-outlined">check</span> Métricas avanzadas del negocio</li>
+                        <li><span class="material-icons-outlined">check</span> Soporte prioritario</li>
+                        <li><span class="material-icons-outlined">check</span> Ajuste fino del prompt y la base</li>
+                    </ul>
+                    <a href="#contacto" class="plan-cta solid">Quiero este →</a>
+                </div>
+
+                <div class="plan-card">
+                    <div class="plan-name">A Medida</div>
+                    <div class="plan-for">Cadenas o varios locales que necesitan algo propio.</div>
+                    <div class="plan-price">
+                        <span class="amount" style="font-size:2rem">Hablemos</span>
+                    </div>
+                    <div class="plan-annual-note">Diagnóstico + llamada, sin precio público</div>
+                    <ul class="plan-feats">
+                        <li><span class="material-icons-outlined">check</span> Varios locales / multi-WhatsApp</li>
+                        <li><span class="material-icons-outlined">check</span> Integraciones a medida</li>
+                        <li><span class="material-icons-outlined">check</span> Onboarding acompañado</li>
+                        <li><span class="material-icons-outlined">check</span> Condiciones por volumen</li>
+                    </ul>
+                    <a href="#contacto" class="plan-cta outline">Agendar llamada →</a>
+                </div>
+            </div>
+
+            <div class="founder-note reveal">
+                <span class="material-icons-outlined" style="vertical-align:middle;color:var(--primary);font-size:18px">verified_user</span>
+                Sin permanencia · cancelás cuando quieras · soporte directo con el equipo que lo implementa.
+            </div>
+        </div>
+    </section>
+
+    <!-- === CONTACT FORM === -->
+    <section class="section section-alt" id="contacto">
+        <div class="section-divider"></div>
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-info reveal">
+                    <div class="section-number">Empezá hoy</div>
+                    <h2 class="section-title">Dejanos tus datos y arrancamos</h2>
+                    <p class="section-desc" style="margin-bottom:40px;">Te mostramos cuántas ventas se te están escapando y cómo lo dejamos atendiendo tu WhatsApp e Instagram en horas. Sin jerga técnica. Hablás directo con quien lo implementa.</p>
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon"><span class="material-icons-outlined">mail</span></div>
+                            <div>
+                                <div class="contact-detail-label">Correo</div>
+                                <div class="contact-detail-value">nexoraagency29@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon"><span class="material-icons-outlined">location_on</span>
+                            </div>
+                            <div>
+                                <div class="contact-detail-label">Ubicación</div>
+                                <div class="contact-detail-value">Argentina</div>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon"><span class="material-icons-outlined">chat</span></div>
+                            <div>
+                                <div class="contact-detail-label">WhatsApp</div>
+                                <div class="contact-detail-value">+54 9 3854 45-6059</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper reveal reveal-delay-1">
+                    <div class="form-card">
+                        <div class="form-card-header">
+                            <div class="form-card-dots">
+                                <span class="code-dot r"></span>
+                                <span class="code-dot y"></span>
+                                <span class="code-dot g"></span>
+                            </div>
+                            <span class="form-card-label">Terminal de Contacto</span>
+                            <span class="form-card-status"><span class="material-icons-outlined"
+                                    style="font-size:14px;color:var(--primary)">lock</span> Seguro</span>
+                        </div>
+                        <form id="contactForm" class="contact-form" onsubmit="return handleSubmit(event)">
+                            <div class="form-group">
+                                <label class="form-label" for="nombre">Nombre completo</label>
+                                <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Tu nombre"
+                                    required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label" for="email">Email</label>
+                                    <input type="email" id="email" name="email" class="form-input"
+                                        placeholder="tu@email.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="whatsapp">WhatsApp</label>
+                                    <input type="tel" id="whatsapp" name="whatsapp" class="form-input"
+                                        placeholder="+54 9 ..." required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="rubro">¿Cómo vendés iPhones hoy?</label>
+                                <select id="rubro" name="rubro" class="form-input form-select" required>
+                                    <option value="" disabled selected>Seleccioná tu caso...</option>
+                                    <option value="Minorista (vendo al público)">Minorista (vendo al público)</option>
+                                    <option value="Mayorista">Mayorista</option>
+                                    <option value="Minorista + Mayorista">Minorista + Mayorista</option>
+                                    <option value="Revendo por Instagram/WhatsApp">Revendo por Instagram/WhatsApp</option>
+                                    <option value="Local con vidriera">Local con vidriera</option>
+                                    <option value="Otros productos de tecnología">Otros productos de tecnología</option>
+                                    <option value="Otro">Otro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="mensaje">¿Qué problema querés resolver?</label>
+                                <textarea id="mensaje" name="mensaje" class="form-input form-textarea"
+                                    placeholder="Contanos brevemente sobre tu negocio y qué te gustaría mejorar..."
+                                    rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="form-submit-btn" id="submitBtn">
+                                <span class="btn-text">Quiero empezar</span>
+                                <span class="btn-icon">→</span>
+                            </button>
+                            <p class="form-disclaimer"><span class="material-icons-outlined"
+                                    style="font-size:13px;vertical-align:middle;margin-right:4px;">lock</span>
+                                Sin spam. Te contactamos por WhatsApp, no por email masivo.</p>
+                        </form>
+                        <!-- Success state -->
+                        <div class="form-success" id="formSuccess" style="display:none;">
+                            <div class="success-icon">🚀</div>
+                            <h3>¡Listo! Ya estamos en contacto.</h3>
+                            <p>Te escribimos por WhatsApp en las próximas horas para coordinar tu diagnóstico gratuito. ¡Nos vemos pronto!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === GUARANTEE === -->
+    <section class="section">
+        <div class="section-divider"></div>
+        <div class="container">
+            <div class="guarantee-wrapper reveal">
+                <div class="guarantee-card">
+                    <span class="material-icons-outlined">verified_user</span>
+                    <h3>Sin contratos ni permanencia. Cancelás cuando quieras.</h3>
+                    <p>No te atamos con setup ni con letra chica. Pagás mes a mes y seguís solo si te suma. La confianza la construimos con resultados, no con cláusulas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === FAQ === -->
+    <section class="section section-alt" id="faq">
+        <div class="section-divider"></div>
+        <div class="container">
+            <div class="section-header center reveal">
+                <div class="section-number">06 — FAQ</div>
+                <h2 class="section-title">Antes de que preguntes</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item reveal">
+                    <button class="faq-trigger" onclick="this.parentElement.classList.toggle('open')">
+                        ¿Necesito saber de tecnología?
+                        <span class="faq-ico">+</span>
+                    </button>
+                    <div class="faq-body">
+                        <p>Para nada. Yo me encargo de toda la parte técnica. Vos solo me contás cómo funciona tu
+                            negocio y qué problemas tenés. El sistema lo manejás desde tu celular como cualquier app.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-trigger" onclick="this.parentElement.classList.toggle('open')">
+                        ¿Cuánto tiempo tarda en estar andando?
+                        <span class="faq-ico">+</span>
+                    </button>
+                    <div class="faq-body">
+                        <p>Horas, no semanas. Vos nos pasás tu lista y tu info, y lo dejamos andando y probado nosotros.
+                            No hay wizard ni configuración técnica de tu lado: te lo entregamos listo para vender.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-trigger" onclick="this.parentElement.classList.toggle('open')">
+                        ¿Y si el bot responde mal o inventa un precio?
+                        <span class="faq-ico">+</span>
+                    </button>
+                    <div class="faq-body">
+                        <p>No inventa: los precios salen siempre de tu catálogo real, atados al dólar. Si no tiene un
+                            modelo, te muestra lo que sí hay en vez de inventarlo. Y podés verlo antes en "Probá tu bot",
+                            ajustar el tono, y tomar el control de cualquier chat cuando quieras.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-trigger" onclick="this.parentElement.classList.toggle('open')">
+                        ¿Qué pasa si no me funciona?
+                        <span class="faq-ico">+</span>
+                    </button>
+                    <div class="faq-body">
+                        <p>Es un alquiler mes a mes: sin setup ni contrato que te ate. Si no te suma, lo cancelás cuando
+                            quieras. Y antes de arrancar podés escribirle al bot por WhatsApp para ver cómo responde.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-trigger" onclick="this.parentElement.classList.toggle('open')">
+                        ¿Cuántos negocios atendés por mes?
+                        <span class="faq-ico">+</span>
+                    </button>
+                    <div class="faq-body">
+                        <p>Trabajo con un máximo de 5 negocios nuevos por mes para garantizar calidad en cada
+                            implementación. Cada sistema es 100% personalizado.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-trigger" onclick="this.parentElement.classList.toggle('open')">
+                        ¿No es caro USD 239 por mes?
+                        <span class="faq-ico">+</span>
+                    </button>
+                    <div class="faq-body">
+                        <p>Pensalo al revés: ¿cuánto te cuesta perder una venta de iPhone por semana? Con un solo equipo
+                            vendido al mes ya está pagado, y atiende 24/7 por mucho menos que un empleado. Es alquiler:
+                            sin setup, cancelás cuando quieras.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-trigger" onclick="this.parentElement.classList.toggle('open')">
+                        ¿Y cuando se mueve el dólar?
+                        <span class="faq-ico">+</span>
+                    </button>
+                    <div class="faq-body">
+                        <p>Cambiás la cotización una sola vez en el panel y todo el catálogo se recalcula solo. El bot
+                            siempre pasa el precio correcto del momento, sin que tengas que tocar producto por producto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === CTA === -->
+    <section class="cta-section" id="cta-final">
+        <div class="hero-orb" style="filter:blur(100px)"></div>
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-scarcity reveal" style="color:var(--primary);background:rgba(var(--primary-rgb),0.06);border-color:rgba(var(--primary-rgb),0.15);"><span class="pulse-dot"></span> El vendedor con IA para locales de iPhone</div>
+                <h2 class="reveal">Tu local perdió ventas esta semana.<br><span class="gradient-text">La que viene no tiene por qué.</span></h2>
+                <p class="reveal">Hablemos 15 minutos. Te mostramos cómo lo dejamos atendiendo tu WhatsApp e Instagram — y arrancás.</p>
+                <div class="reveal" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+                    <a href="#contacto" class="btn-glow" style="font-size:1rem; padding:16px 36px;">Quiero empezar →</a>
+                    <a href="https://wa.me/5493854456059?text=Hola!%20Quiero%20agendar%20mi%20auditor%C3%ADa%20gratuita%20de%20IA"
+                        target="_blank" class="btn-ghost" style="font-size:1rem; padding:16px 36px;">Escribínos ahora por WhatsApp →</a>
+                </div>
+                <div class="cta-trust reveal">✓ sin compromiso &nbsp;&nbsp; ✓ 15 minutos &nbsp;&nbsp; ✓ 100% gratis
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === FOOTER === -->
+    <footer class="site-footer">
+        <div class="container footer-row">
+            <div class="footer-brand" style="display: flex; align-items: center; gap: 10px;">
+                <svg width="42" height="42" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    style="filter: drop-shadow(0 0 8px rgba(0, 212, 126, 0.2));">
+                    <defs>
+                        <linearGradient id="nGradFoot1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#00D47E" />
+                            <stop offset="100%" stop-color="#00A3FF" />
+                        </linearGradient>
+                        <linearGradient id="nGradFoot2" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#33FFAA" />
+                            <stop offset="100%" stop-color="#00D47E" />
+                        </linearGradient>
+                    </defs>
+                    <rect x="18" y="18" width="16" height="64" rx="6" fill="url(#nGradFoot1)" />
+                    <rect x="66" y="18" width="16" height="64" rx="6" fill="url(#nGradFoot1)" />
+                    <path d="M26 26 L74 74" stroke="url(#nGradFoot2)" stroke-width="16" stroke-linecap="round" />
+                </svg>
+                <span class="nav-brand-text"
+                    style="font-family: var(--font-mono); font-weight: 700; font-size: 1.35rem; color: #F0FFF7;">Nexora<span
+                        style="color: var(--primary);">IA</span></span>
+            </div>
+            <div class="footer-copy">© 2026 Nexora — El vendedor con IA para tu local de iPhones</div>
+        </div>
+    </footer>
+
+    <!-- === WHATSAPP === -->
+    <a href="https://wa.me/5493854456059?text=Hola!%20Quiero%20info%20sobre%20los%20servicios%20de%20IA" target="_blank"
+        class="wa-float" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+
+    <!-- === JS === -->
+    <script>
+        // Reveal Observer for standard & manifesto lines
+        const obs = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    // Check if it's the manifesto to trigger children
+                    if (e.target.classList.contains('manifesto-content')) {
+                        e.target.querySelectorAll('.manifesto-line').forEach(line => line.classList.add('visible'));
+                    }
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+        // Archive Stack Effect (Intersection Observer hack since it's sticky)
+        window.addEventListener('scroll', () => {
+            if (window.innerWidth > 768) {
+                const cards = document.querySelectorAll('.archive-card');
+                cards.forEach((card, i) => {
+                    if (i === cards.length - 1) return;
+                    const rect = card.getBoundingClientRect();
+                    // If card is sticky at top, scale it based on scroll
+                    if (rect.top <= 121) {
+                        const dist = Math.max(0, 120 - rect.top);
+                        // Add class or style
+                        card.style.transform = `scale(${Math.max(0.9, 1 - dist / 1000)})`;
+                        card.style.filter = `blur(${Math.min(10, dist / 10)}px)`;
+                        card.style.opacity = Math.max(0.5, 1 - dist / 500);
+                    } else {
+                        card.style.transform = 'scale(1)';
+                        card.style.filter = 'blur(0px)';
+                        card.style.opacity = 1;
+                    }
+                });
+            }
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            nav.classList.toggle('scrolled', window.scrollY > 60);
+        });
+
+        // Chat animation
+        function animateChat() {
+            const msgs = document.querySelectorAll('#heroChat .chat-msg');
+            msgs.forEach(msg => {
+                const delay = parseInt(msg.dataset.delay) || 0;
+                setTimeout(() => msg.classList.add('in-view'), delay);
+            });
+        }
+        const chatObs = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) { setTimeout(animateChat, 600); chatObs.disconnect(); }
+            });
+        }, { threshold: 0.3 });
+        const heroChat = document.getElementById('heroChat');
+        if (heroChat) chatObs.observe(heroChat);
+
+        // Deck Animation
+        const deckCards = document.querySelectorAll('#diagnosticDeck .deck-card');
+        if (deckCards.length > 0) {
+            let activeIdx = 0;
+            setInterval(() => {
+                deckCards.forEach((c, i) => {
+                    const offset = (i - activeIdx + deckCards.length) % deckCards.length;
+                    c.style.transform = `translateY(${offset === 0 ? '0' : offset === 1 ? '16px' : '32px'}) scale(${offset === 0 ? 1 : offset === 1 ? 0.95 : 0.9})`;
+                    c.style.zIndex = deckCards.length - offset;
+                    c.style.opacity = offset === 0 ? 1 : 0.6;
+                });
+                activeIdx = (activeIdx + 1) % deckCards.length;
+            }, 3000);
+            // trigger first frame
+            deckCards[0].parentElement.dispatchEvent(new Event('mouseenter'));
+        }
+
+        // Telemetry Typewriter
+        const telText = document.getElementById('telemetryText');
+        if (telText) {
+            const msgs = ["Consultando catálogo...", "Calculando al dólar...", "Calificando lead (score 88)...", "Avisando al dueño..."];
+            let mIdx = 0, cIdx = 0, isDel = false;
+            function type() {
+                const cur = msgs[mIdx];
+                if (isDel) { cIdx--; } else { cIdx++; }
+                telText.textContent = cur.substring(0, cIdx);
+                let speed = isDel ? 30 : 80;
+                if (!isDel && cIdx === cur.length) { speed = 2000; isDel = true; }
+                else if (isDel && cIdx === 0) { isDel = false; mIdx = (mIdx + 1) % msgs.length; speed = 500; }
+                setTimeout(type, speed);
+            }
+            setTimeout(type, 1000);
+        }
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', function (e) {
+                e.preventDefault();
+                const t = document.querySelector(this.getAttribute('href'));
+                if (t) t.scrollIntoView({ behavior: 'smooth' });
+                document.getElementById('navLinks')?.classList.remove('open');
+            });
+        });
+
+
+        async function handleSubmit(e) {
+            e.preventDefault();
+            const btn = document.getElementById('submitBtn');
+            btn.classList.add('loading');
+            btn.querySelector('.btn-text').textContent = 'Enviando...';
+
+            const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+            const whatsapp = document.getElementById('whatsapp').value;
+            const rubro = document.getElementById('rubro').value;
+            const mensaje = document.getElementById('mensaje').value || 'Sin mensaje';
+
+            const data = {
+                nombre: nombre,
+                email: email,
+                whatsapp: whatsapp,
+                rubro: rubro,
+                mensaje: mensaje,
+                timestamp: new Date().toISOString(),
+                source: 'landing-nexora-iphone',
+                // Config de FormSubmit (email bonito, sin captcha)
+                _subject: 'Nuevo lead — Nexora iPhone',
+                _template: 'table',
+                _captcha: 'false'
+            };
+
+            // Backup en localStorage (por las dudas)
+            const leads = JSON.parse(localStorage.getItem('scope_leads') || '[]');
+            leads.push(data);
+            localStorage.setItem('scope_leads', JSON.stringify(leads));
+
+            // Enviar por email vía FormSubmit (alias que oculta el correo de destino)
+            try {
+                await fetch('https://formsubmit.co/ajax/36865c8fd055e534fb360771d540f412', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+            } catch (err) { console.error('Error al enviar el lead:', err); }
+
+            // Mostrar éxito
+            setTimeout(() => {
+                document.getElementById('contactForm').style.display = 'none';
+                document.getElementById('formSuccess').style.display = 'block';
+                btn.classList.remove('loading');
+            }, 800);
+
+            return false;
+        }
+
+        // === Spotlight del dólar: recalcula la lista al mover la cotización ===
+        function fmtARS(n) {
+            return '$' + Math.round(n).toLocaleString('es-AR');
+        }
+        function updateDolar(rate) {
+            rate = Number(rate);
+            document.getElementById('dolarRate').textContent = Number(rate).toLocaleString('es-AR');
+            document.querySelectorAll('.dolar-row .price').forEach(el => {
+                const usd = Number(el.dataset.usd);
+                el.textContent = fmtARS(usd * rate);
+                el.classList.add('flash');
+                setTimeout(() => el.classList.remove('flash'), 320);
+            });
+        }
+        updateDolar(document.getElementById('dolarRange') ? document.getElementById('dolarRange').value : 1200);
+
+        // === Calculadora de ROI ===
+        function updateRoi() {
+            const lost = Number(document.getElementById('roiLost').value);     // consultas perdidas / semana
+            const perSale = Number(document.getElementById('roiMargin').value); // facturación por venta (USD)
+            document.getElementById('roiLostVal').textContent = lost;
+            document.getElementById('roiMarginVal').textContent = perSale;
+            const WEEKS = 4.33, RECOVER = 0.25, CLOSE = 0.25;
+            // ventas nuevas / mes — se redondea ANTES de multiplicar, así "N ventas × facturación" da exacto
+            const salesMonth = Math.round(lost * WEEKS * RECOVER * CLOSE);
+            const revenue = salesMonth * perSale;                              // facturación recuperada / mes
+            document.getElementById('roiRecovered').textContent = 'USD ' + revenue.toLocaleString('es-AR');
+            document.getElementById('roiUnits').textContent = '≈ ' + salesMonth + ' ventas nuevas por mes';
+        }
+        if (document.getElementById('roiLost')) updateRoi();
+
+        // === Toggle de planes mensual / anual (por defecto: anual) ===
+        function applyPlan(annual) {
+            document.getElementById('lblMonthly').classList.toggle('on', !annual);
+            document.getElementById('lblAnnual').classList.toggle('on', annual);
+            document.querySelectorAll('.plan-price .amount[data-monthly]').forEach(el => {
+                el.textContent = annual ? el.dataset.annual : el.dataset.monthly;
+            });
+            document.querySelectorAll('.plan-annual-note[data-annual-note]').forEach(el => {
+                el.textContent = annual ? el.dataset.annualNote : '';
+            });
+        }
+        function togglePlan() {
+            const sw = document.getElementById('planToggle');
+            applyPlan(sw.classList.toggle('annual'));
+        }
+        if (document.getElementById('planToggle')) {
+            applyPlan(document.getElementById('planToggle').classList.contains('annual'));
+        }
+    </script>
+</body>
+
+</html>
