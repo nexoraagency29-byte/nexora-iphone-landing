@@ -4,6 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1585634312449529');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1585634312449529&ev=PageView&noscript=1" alt="" /></noscript>
+    <!-- End Meta Pixel Code -->
     <title>Nexora iPhone | El vendedor con IA para tu local de iPhones — WhatsApp 24/7 + CRM</title>
     <meta name="description"
         content="El vendedor de iPhones con IA que atiende tu WhatsApp 24/7, no pierde un cliente y te arma el CRM solo. Precios atados al dólar y pre-entrenado para el rubro iPhone.">
@@ -3728,6 +3747,7 @@
                             <p style="margin-bottom:22px;">Elegí día y hora para tu diagnóstico gratuito de 15 min. Te
                                 muestro en vivo cómo quedaría el bot para tu negocio.</p>
                             <a href="https://calendly.com/nexoraagency29" target="_blank" rel="noopener"
+                                onclick="if(typeof fbq==='function'){fbq('track','Schedule',{content_name:'Calendly Nexora iPhone'});}"
                                 class="form-submit-btn" style="display:inline-flex;width:auto;text-decoration:none;">
                                 <span class="btn-text">Agendar mi diagnóstico</span>
                                 <span class="btn-icon">→</span>
@@ -4054,6 +4074,11 @@
                     body: JSON.stringify(data)
                 });
             } catch (err) { console.error('Error al enviar el lead:', err); }
+
+            // Meta Pixel: registrar el lead calificado (conversión que Meta optimiza)
+            if (typeof fbq === 'function') {
+                fbq('track', 'Lead', { content_name: 'Diagnostico Nexora iPhone' });
+            }
 
             // Mostrar éxito
             setTimeout(() => {
